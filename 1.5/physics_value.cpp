@@ -46,5 +46,6 @@ physics_value physics_value::operator/(const physics_value& in_value) const
 
 std::ostream& operator<<(std::ostream& os, const physics_value& in_value)
 {
-	return (os << in_value.m_value << ' ');
+	const char* name = in_value.m_name == PASCALS ? " Pa" : in_value.m_name == NIUTONS ? " Nu" : in_value.m_name == METERS ? " me" : " ";
+	return (os << in_value.m_value << name);
 }
