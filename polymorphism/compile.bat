@@ -1,1 +1,0 @@
-g++ area.cpp power.cpp pressure.cpp main.cpp physics_value.cpp -o ppp
